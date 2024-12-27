@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    restart: always
+    tty: true
+    network_mode: host
